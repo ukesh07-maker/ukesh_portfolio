@@ -179,6 +179,34 @@
         <p>&copy; 2024 G. Ukesh. All Rights Reserved.</p>
     </footer>
 
+    <!-- AI Chat Widget -->
+    <div id="chat-widget" class="chat-widget">
+        <button id="chat-trigger" class="chat-trigger" title="Chat with Ukesh's AI Assistant">
+            <i class="fas fa-comment-dots"></i>
+        </button>
+        <div id="chat-container" class="chat-container hidden">
+            <div class="chat-header">
+                <div class="chat-header-info">
+                    <img src="assets/profile-photo.jpeg" alt="AI Avatar" class="chat-avatar">
+                    <div class="chat-header-text">
+                        <h3>Ukesh's Assistant</h3>
+                        <span class="status-online">Online</span>
+                    </div>
+                </div>
+                <button id="close-chat" class="close-chat"><i class="fas fa-times"></i></button>
+            </div>
+            <div id="chat-messages" class="chat-messages">
+                <!-- Messages will be injected here -->
+            </div>
+            <div class="chat-input-area">
+                <input type="text" id="chat-input" placeholder="Ask me about Ukesh..." autocomplete="off">
+                <button id="send-message" class="send-message">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 
